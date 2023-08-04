@@ -222,11 +222,11 @@ void MX_X_CUBE_AI_Init(void)
   nn_name[0] = ai_mnetwork_find(NULL, 0);
   if (nn_name[0])
   {
-    printf("\nFound network: \"%s\"\n", nn_name[0]);
+    printf("\nFound ai_mnetwork_find: \"%s\"\n", nn_name[0]);
   }
   else
   {
-    printf("E: ai_mnetwork_find\n");
+    printf("Error: ai_mnetwork_find\n");
   }
 
   // Create the network
@@ -323,7 +323,7 @@ void MX_X_CUBE_AI_Process(void)
 
   printf("Model 1 Inference Complete \n");
 
-
+  // Model 2 inference
   static float user_input2[28*28]={
       0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,
       0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,
